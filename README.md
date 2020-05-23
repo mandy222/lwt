@@ -24,6 +24,7 @@
 
 ## 项目部分截图
 ### 移动端网站
+![移动端网站截图](https://github.com/mandy222/lwt/blob/master/img/web-1.png)
 
 ### 后台管理系统
 
