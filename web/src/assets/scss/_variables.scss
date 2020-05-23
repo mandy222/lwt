@@ -1,0 +1,83 @@
+
+// colors
+$colors: (
+  'primary': #FFD611,
+  'light': #EAA61C,
+  'dark': #333333,
+  'dark-1': #343440,
+  'grey': #AAAAAA,
+  'grey-1': #666,
+  'white': #fff,
+  'black': #000,
+  'red': red,
+  'light-1': #d4d9de,
+  'blue': #3399ea,
+  'light-2': #f1f1f1
+);
+$border-color: map-get($colors, 'light-1');
+// font size
+$base-font-size: 1rem;
+$font-sizes: (
+  xxs: 0.6154,
+  xs: 0.7692,
+  //10px
+    sm: 0.9231,
+  //12px
+    md: 1,
+  //13px
+    lg: 1.0769,
+  //14px
+    xl: 1.2308,
+  //16px
+    xxl: 1.5385,
+  // 20px
+    xxxl: 4.6154,
+  // 60px
+   bl: 1.9231,
+   
+   // 30px
+ 
+);
+// 交叉轴
+$flex-jc: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+);
+// 主轴
+$flex-ai: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+);
+// spacing
+// 0-5: 0
+// .mt-1  => margin top  .pb-2
+$spacing-types: (
+  m: margin,
+  p: padding,
+);
+$spacing-directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+$spacing-base-size: 1rem;
+$spacing-sizes: (
+  0: 0,
+  1: 0.25,
+  2: 0.5,
+  3: 1,
+  4: 1.5,
+  5: 3,
+  6: 4
+);
+$line-clamp: (
+  1: 1,
+  2: 2,
+  3: 3
+);

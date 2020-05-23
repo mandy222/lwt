@@ -1,0 +1,237 @@
+@import './variables';
+
+// reset
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 3.47vw;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background: #f1f1f1;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #999;
+}
+p {
+  line-height: 1.5em;
+}
+// color
+@each $colorKey, $color in $colors {
+  .text-#{$colorKey} {
+    color: $color;
+  }
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+// text align
+@each $var in (left, center, right) {
+  .text-#{$var} {
+    text-align: $var !important;
+  }
+}
+// text size
+@each $sizeKey, $size in $font-sizes {
+  .fs-#{$sizeKey} {
+    font-size: $size * $base-font-size!important;
+  }
+}
+
+// line-height
+@each $sizeKey,
+$size in $font-sizes {
+  .lh-#{$sizeKey} {
+    line-height: $size * $base-font-size !important;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// 文本溢出
+@each $key, $value in $line-clamp {
+  .ellipsis-#{$key} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $value;
+    overflow: hidden;
+  }
+}
+
+
+// width, height
+.w-100 {
+  width: 100%;
+}
+.h-100 { 
+  height: 100%;
+}
+// flex
+.d-flex {
+  display: flex;
+}
+// 主轴方向
+.flex-column {
+  flex-direction: column; // 向下
+}
+
+.flex-row {
+  flex-direction: row;
+}
+// 换行方式
+.flex-wrap {
+  flex-wrap: wrap;  // 换行
+}
+
+@each $key, $value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key, $value in $flex-ai {
+  .ai-#{$key} {
+    align-items: $value;
+  }
+}
+// 自动撑满
+.flex-1 {
+  flex: 1;
+}
+// 默认拉伸
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+// m-0, mx-0
+@each $typeKey, $type in $spacing-types { // 循环得到margin、padding
+  // .m-1 四个方向
+  @each $sizeKey, $size in $spacing-sizes {
+    .#{$typeKey}-#{$sizeKey} {
+      #{$type}: $size * $spacing-base-size;
+    }
+  }
+  // .mx-1 , .my-1 上下或左右
+  @each $sizeKey, $size in $spacing-sizes {
+    .#{$typeKey}x-#{$sizeKey} {
+      #{$type}-left: $size * $spacing-base-size;
+      #{$type}-right: $size * $spacing-base-size;
+    }
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $size * $spacing-base-size;
+      #{$type}-bottom: $size * $spacing-base-size;
+    }
+  }
+  // .mt-1 上/下/左/右
+  @each $directionKey, $direction in $spacing-directions { // top、right、bottom、left
+    @each $sizeKey, $size in $spacing-sizes { // level
+      .#{$typeKey}#{$directionKey}-#{$sizeKey} {  // .mt-1 margin-top: 1*spacing-base-size
+        #{$type}-#{$direction}: $size * $spacing-base-size;
+      }
+    }
+  }
+}
+
+// nav
+.nav {
+  display: flex;
+  .nav-item {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.2rem;
+    &.active {
+      color: map-get($colors, 'light');
+      border-bottom-color: map-get($colors, 'light');
+    }
+  }
+}
+
+.van-tabbar--fixed,
+.van-popup {
+  bottom: -3px;
+}
+
+.van-popup {
+  bottom: -5px;
+}
+
+.van-tabbar-item {
+  margin-bottom: 4px;
+  margin-top: 3px;
+}
+
+// borders
+@each $dir in (top, right, bottom, left) {
+  .border-#{$dir} {
+    border-#{$dir}: 1px solid $border-color;
+  }
+}
+
+.triangle_border_down {
+  border-width: .5rem .4rem 0;
+  border-style: solid;
+  border-color: map-get($colors, 'grey-1') transparent transparent;
+  /*灰 透明 透明 */
+}
+
+@each $colorKey, $color in $colors {
+  .triangle_border_down-#{$colorKey} {
+    border-width: .5rem .4rem 0;
+    border-style: solid;
+    border-color: $color transparent transparent;
+  }
+}
+
+.gotop {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1rem;
+  z-index: 99;
+  .gotop-icon {
+    opacity: .5;
+    font-size: 2.6rem;
+    border-radius: 50%;
+    padding: .2rem;
+    border: 1px solid map-get($colors, 'dark');
+  }
+}
+
+.van-cell {
+  font-size: 1.0769rem;
+  line-height: 1.0769rem;
+}
+.van-field__left-icon .van-icon,
+.van-field__right-icon .van-icon {
+  font-size: 1.2308rem;
+}
+
+.van-search {
+  padding: 0.7692rem 0.9231rem;
+}
+
+.van-tabbar--fixed,
+.van-popup {
+  bottom: -0.2308rem;
+}
+.van-tabbar {
+  height: 3.8462rem;
+}
+
+.van-tabbar-item {
+  font-size: 0.9231rem;
+}
+
+.van-tabs--line .van-tabs__wrap {
+  height: 3.3846rem;
+}
+
+.van-tab {
+  font-size: 1.0769rem;
+  line-height: 3.3846rem;
+}

@@ -1,0 +1,139 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #409eff;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  min-width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.avatar {
+  min-width: 5rem;
+  height: 5rem;
+  display: block;
+}
+
+.ql-editor {
+  min-height: 300px!important;
+}
+
+.box-card {
+  min-height: 80vh;
+}
+
+.search-table {
+  margin-top: 0!important;
+}
+
+.el-button+.el-button {
+  margin-left: 5px;
+}
+
+// 文本溢出
+$line-clamp: (
+  1: 1,
+  2: 2,
+  3: 3
+);
+
+@each $key,
+$value in $line-clamp {
+  .ellipsis-#{$key} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $value;
+    overflow: hidden;
+  }
+}
+
+// vue2-editor
+.ql-snow .ql-picker.ql-header .ql-picker-label::before {
+  position: absolute;
+  top: 0;
+}
+
+.ql-snow .ql-picker.ql-header {
+  width: 95px!important;
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 0px!important;
+}

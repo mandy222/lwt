@@ -1,0 +1,65 @@
+{
+  "id": "1729296",
+  "name": "lwt",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10268974",
+      "name": "键盘",
+      "font_class": "jianpan",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "8300925",
+      "name": "闭眼",
+      "font_class": "biyan",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "10715457",
+      "name": "眼睛-睁眼",
+      "font_class": "yanjing-zhengyan",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "605928",
+      "name": "竖",
+      "font_class": "shu",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "10101831",
+      "name": "more read",
+      "font_class": "moreread",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "11745775",
+      "name": "首页-选中",
+      "font_class": "yemian-copy-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1153018",
+      "name": "活动",
+      "font_class": "mili_huodong",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "13409464",
+      "name": "资讯",
+      "font_class": "zixun",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}

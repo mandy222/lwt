@@ -1,0 +1,60 @@
+@uri = http://localhost:3000/admin/api/rest
+@id = 5e7b5bc90664970660d6a724
+@table = trends
+@auth = ["5e7b54d80eb7cb20e0d0654e","5e7b54c60eb7cb20e0d0654d","5e7b54750eb7cb20e0d0654c"]
+@role = 5e7c447ca3768c45f41528f0
+@admin = 5e7b5bc90664970660d6a724
+POST {{uri}}/{{table}}/create
+Content-Type: application/json
+
+{
+    "role": ["5e7c447ca3768c45f41528f0"]
+}
+###
+GET {{uri}}/{{table}}/list
+###
+GET {{uri}}/{{table}}/page/list
+###
+GET {{uri}}/{{table}}/list/{{id}}
+###
+PUT {{uri}}/{{table}}/update/{{id}}
+Content-Type: application/json
+
+{
+    "role": ["5e7c447ca3768c45f41528f0"]
+}
+###
+DELETE  {{uri}}/{{table}}/delete/{{id}}
+###
+POST http://localhost:3000/admin/api/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "111111"
+}
+###
+GET http://localhost:3000/admin/api/user/info
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2I1YmM5MDY2NDk3MDY2MGQ2YTcyNCIsImlhdCI6MTU4NTIwMjUyMn0.j3KvMebRGlgdEGhaCyenu1dBZTXaegrARRPagpt-wLI"
+}
+###
+GET http://localhost:3000/admin/api/authorities/parent/list
+###
+GET http://localhost:3000/admin/api/authorities/list
+###
+GET {{uri}}/{{table}}/page/list
+Content-Type: application/json
+
+{
+    "pageSize": 1,
+    "currentPage": 2
+}
+###
+GET http://localhost:3000/admin/api/authorities/menu
+###
+GET http://localhost:3000/admin/api/roles/list
+###
+GET http://localhost:3000/admin/api/roles/detail
