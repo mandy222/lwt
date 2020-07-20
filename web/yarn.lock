@@ -904,10 +904,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@vant/icons@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.2.1.tgz#309fecb97a4989866f045ce676b545c454701c8f"
-  integrity sha1-MJ/suXpJiYZvBFzmdrVFxFRwHI8=
+"@vant/icons@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@vant/icons/-/icons-1.2.3.tgz#c46b7ddd32363f790944c3af974b73bda80df7a1"
+  integrity sha512-LMu1JGGgZqLYXVFRcuNRDCOWE7AX0vt/gFBkd9xMI7H9uMdNx2oO3YujgNVvVrrF8iufHwfwUv41HiwYMvU3zQ==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -4997,9 +4997,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -8042,13 +8042,13 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^2.5.9:
-  version "2.7.1"
-  resolved "https://registry.npm.taobao.org/vant/download/vant-2.7.1.tgz#6989db0851a6a383eee9368f19af911214194cc3"
-  integrity sha1-aYnbCFGmo4Pu6TaPGa+REhQZTMM=
+vant@^2.8.0:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/vant/-/vant-2.9.3.tgz#3173524d9f6a45f9efb3afd66c18f5aa4749195f"
+  integrity sha512-2NPp5iDnyg1JUodDFPf/BwMyi8jQw8YmwQgiuuxC/+TauYTPBxV4LxPsMrG69jqPr02EH1h7zHrwJrpYudiQGg==
   dependencies:
     "@babel/runtime" "7.x"
-    "@vant/icons" "1.2.1"
+    "@vant/icons" "1.2.3"
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
     vue-lazyload "1.2.3"
 
